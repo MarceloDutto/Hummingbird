@@ -10,7 +10,7 @@
 
 ## :eyes: Descripción
 
-Hummingbird es una aplicación web fullstack, creada como un clon de la plataforma digital de distribución de música denominada Spotify. Fue desarrolada con React en el frontend y Node.js con Express en el backend. Esta aplicación uitliza la propia API de Spotify para brindar acceso a los datos almacenados en la base de datos de la plataforma, que incluyen información sobre los tracks, los álbumes, los artistas, los usuarios y las playlists, entre otras cosas.
+Hummingbird es una aplicación web fullstack, creada como un clon de la plataforma digital de distribución de música denominada Spotify. Fue desarrollada con React en el frontend y Node.js con Express en el backend. Esta aplicación uitliza la propia API de Spotify para brindar acceso a los datos almacenados en la base de datos de la plataforma, que incluyen información sobre los tracks, los álbumes, los artistas, los usuarios y las playlists, entre otras cosas.
 
 Hummingbird es un proyecto personal, creado sin ningún fin de lucro y que no pretende infringir ninguna ley de copyright, siendo únicamente un ejercicio educativo y de aprendizaje.
 
