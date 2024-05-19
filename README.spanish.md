@@ -1,4 +1,4 @@
-# :musical_note:  Hummingbird | Spotify Clone
+# :musical_note:  Hummingbird | Spotify Clon
 <br/>
 <br/>
 
