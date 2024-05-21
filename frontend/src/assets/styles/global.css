@@ -1,0 +1,26 @@
+/* GLOBAL STYLES */
+
+html {
+    scrollbar-color: hsla(0,0%,100%,.3) transparent;
+    scrollbar-width: auto;
+    background-color: #121212;
+    height: 100%;
+    overscroll-behavior-y: none;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    line-height: normal;
+    min-height: 600px;
+    min-width: 800px;
+    width: 100%;
+    flex-direction: column;
+    scrollbar-width: none;
+    overscroll-behavior-y: none;
+    vertical-align: baseline;
+    font-family: var(--font-primary), sans-serif;
+    color: #b3b3b3;
+}
+
+
