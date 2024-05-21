@@ -1,10 +1,11 @@
 import React from "react";
 
+import MainContent from "./components/main/MainContent.jsx";
+
+
 const App = () => {
   return (
-    <div>
-      Hola mundo
-    </div>
+    <MainContent />
   )
 }
 

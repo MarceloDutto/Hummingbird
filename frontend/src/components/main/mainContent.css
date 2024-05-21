@@ -1,0 +1,29 @@
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+}
+
+.Root {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: none .5s cubic-bezier(.3,0,.4,1);
+    transition-property: background;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--background-black);
+    display: grid;
+    grid-template-areas: 'left-sidebar main-view' 'now-playing-bar now-playing-bar';
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    gap: var(--space-2);
+    padding: var(--space-2);
+}
