@@ -6,6 +6,10 @@ html {
     background-color: #121212;
     height: 100%;
     overscroll-behavior-y: none;
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--font-base);
+    line-height: normal;
+    vertical-align: baseline;
 }
 
 body {
@@ -18,9 +22,57 @@ body {
     flex-direction: column;
     scrollbar-width: none;
     overscroll-behavior-y: none;
-    vertical-align: baseline;
-    font-family: var(--font-primary), sans-serif;
     color: #b3b3b3;
 }
 
+.link-subtle {
+    color: #b3b3b3;
+    transition-duration: .2s;
+    transition-property: color;
+    transition-timing-function: linear;
+    user-select: none;
+}
+
+.text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 5px;
+}
+
+.text-body-large,
+.text-body-large-bold {
+    font-family: var(--font-primary);
+    font-size: var(--font-body-large);
+}
+
+.text-body-large-bold {
+    font-weight: var(--fw-bold);
+}
+
+.text-body-medium,
+.text-body-medium-bold {
+    font-family: var(--font-primary);
+    font-size: var(--font-body-medium);
+}
+
+.text-body-medium-bold {
+    font-weight: var(--fw-bold);
+}
+
+.icon {
+    color: inherit;
+    fill: currentColor;
+}
+
+.icon-16 {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-24 {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+}
 

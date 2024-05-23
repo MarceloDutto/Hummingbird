@@ -1,0 +1,36 @@
+.left-sidebar-footer {
+    overflow: hidden;
+}
+
+.footer-links {
+    margin: 32px 0;
+    padding: 0 24px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.links-title {
+    color: var(--text-base);
+    font-weight: var(--fw-medium);
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, var(--text-base), transparent);
+    background-position: center;
+    opacity: .4;
+}
+
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-language {
+    margin-bottom: 32px;
+    padding: 0 24px;
+}
