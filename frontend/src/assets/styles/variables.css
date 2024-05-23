@@ -11,8 +11,10 @@
     --background-frame: #242424;
     --background-highlight: #1a1a1a;
     --background-pressed: #000;
+    --background-highlight-light: #f6f6f6;
     --text-base: #ffffff;
     --text-subtle: #a7a7a7;
+    --text-black: #ffffff;
 
     
     /**          

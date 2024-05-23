@@ -20,7 +20,7 @@ const LeftSideBarFooter = () => {
                 <div className="links-list">
             	    {
                         FOOTERLINKS.map(link => (
-                            <LinkContainer url={link.url} text={link.text} icon={link.icon} />
+                            <LinkContainer url={link.url} text={link.text} icon={link.icon} key={link.id} />
                         ))
                     }
                 </div>

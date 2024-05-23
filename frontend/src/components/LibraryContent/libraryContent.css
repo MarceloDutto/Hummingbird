@@ -1,0 +1,28 @@
+.library-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    right: auto;
+    padding: 0;
+    border: none;
+    flex: auto;
+    min-width: 0;
+    z-index: 0;
+    overflow: hidden;
+    scrollbar-width: none;
+    vertical-align: baseline;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    min-height: 100%;
+    padding: 0 8px 8px;
+}
