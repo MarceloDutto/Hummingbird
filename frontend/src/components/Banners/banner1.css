@@ -21,7 +21,7 @@
     align-self: flex-start;
 }
 
-button {
+.btn {
     background-color: var(--background-highlight-light);
     border: 0;
     border-radius: 9999px;
@@ -45,8 +45,14 @@ button {
     padding-block-end: var(--space-1);
     padding-inline-start: var(--space-4);
     padding-inline-end: var(--space-4);
+    transition: transform .2s linear;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .black {
     color: black;
 }
+

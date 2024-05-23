@@ -1,0 +1,5 @@
+#now-playing-bar {
+    grid-area: now-playing-bar;
+    width: 100%;
+    z-index: var(--now-playing-bar-z-index);
+}

@@ -1,0 +1,67 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 620px;
+    height: auto;
+    user-select: none;
+}
+
+.signup-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--space-6);
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    padding: 11px 24px 7px 15px;
+}
+
+.text-wrapper {
+    margin: 0 0 4px;
+    color: var(--text-base);
+}
+
+.signup-button {
+    font-size: var(--font-body-large);
+    font-weight: var(--fw-bold), 700;
+    background-color: var(--background-white);
+    border: 0;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    padding: 0;
+    min-inline-size: 0;
+    align-self: center;
+    transition: transform .2s linear;
+}
+
+.signup-button:hover {
+    transform: scale(1.05);
+}
+
+.button-span {
+    position: relative;
+    white-space: nowrap;
+    flex: 1 0 auto;
+    background-color: var(--background-white);
+    color: var(--text-black);
+    display: flex;
+    border-radius: var(--radius-full);
+    min-block-size: var(--space-12);
+    align-items: center;
+    justify-content: center;
+    padding-block-start: var(--space-2);
+    padding-block-end: var(--space-2);
+    padding-inline-start: var(--space-8);
+    padding-inline-end: var(--space-8);
+}

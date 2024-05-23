@@ -11,7 +11,7 @@ const Banner1 = ({title, subtitle, action}) => {
             <span className="text text-body-medium">{subtitle}</span>
         </div>
         <div className="action">
-            <button>
+            <button className="btn">
                 <span className="text text-body-medium-bold black">{action}</span>
             </button>
         </div>
