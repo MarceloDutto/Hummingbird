@@ -93,4 +93,5 @@
     --left-sidebar-width: 420px;
     --left-sidebar-z-index: 4;
     --now-playing-bar-z-index: 6;
+    --background-noise: url('/img/noise.svg')
 }

@@ -1,0 +1,237 @@
+#main-view {
+    grid-area: main-view;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-base);
+    padding: var(--space-2);
+    border-radius: var(--space-2);
+    overflow: hidden;
+    position: relative;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .5);
+    /* content: contents; */
+    display: flex;
+    height: 64px;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+}
+
+.header-container {
+    background-color: var(--background-base);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .25s ease-out;
+    z-index: -1;
+}
+
+.signup-header {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: auto;
+    white-space: nowrap;
+    padding: 0 16px;
+    max-width: 1955px;
+    width: 100%;
+}
+
+.arrows-container {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.top-bar-button {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-base);
+    display: inline-flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    touch-action: manipulation;
+}
+
+.top-bar-button:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}
+
+.sign-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.buttons {
+    padding: 0;
+    pointer-events: auto;
+    white-space: nowrap;
+}
+
+.signup-header-button {
+    font-size: var(--text-body-large, 1.6rem);
+    font-weight: var(--fw-bold, 700);
+    background-color: transparent;
+    border: 0px;
+    border-radius: var(--radius-full, 9999px);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    color: var(--text-subdued,#6a6a6a);
+    min-inline-size: 0px;
+    min-block-size: var(--spce-12, 48px);
+    padding-block-start: var(--space-2, 8px);
+    padding-block-end: var(--space-2, 8px);
+    padding-inline-start: var(--space-8, 32px);
+    padding-inline-end: var(--space-8, 32px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-header-button:hover,
+.signup-header-button:focus {
+    color: var(--text-base, #fff);
+    transform: scale(1.04);
+}
+
+.signin-header-button {
+    font-size: var(--text-body-large, 1.6rem);
+    font-weight: var(--fw-bold, 700);
+    background-color: transparent;
+    border: 0px;
+    border-radius: var(--radius-full, 9999px);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    padding: 0px;
+    min-inline-size: 0px;
+    align-self: center;
+}
+
+.button-inner-text {
+    position: relative;
+    background-color: var(--background-white, #ffffff);
+    color: var(--text-black, #000000);
+    display: flex;
+    border-radius: var(--radius-full, 9999px);
+    font-size: inherit;
+    min-block-size: var(--spce-12, 48px);
+    align-items: center;
+    justify-content: center;
+    padding-block-start: var(--space-2, 8px);
+    padding-block-end: var(--space-2, 8px);
+    padding-inline-start: var(--space-8, 32px);
+    padding-inline-end: var(--space-8, 32px);
+}
+
+.signin-header-button:hover,
+.signin-header-button:focus {
+    transform: scale(1.04);
+}
+
+.main-view-container {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+}
+
+.scrollbars-overlay {
+    height: 100%;
+    scrollbar-width: none !important;
+    position: relative;
+    display: flex;
+    align-items: stretch !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    scroll-behavior: auto !important;
+    overflow: hidden !important;
+}
+
+.viewport {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    scrollbar-width: none !important;
+    position: relative;
+    border: none;
+    outline: none;
+    flex: auto !important;
+    height: auto;
+    margin: 0;
+    min-width: 0;
+    z-index: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.main-view-container-spacer {
+    height: 64px;
+    position: sticky;
+    top: 0;
+}
+
+.main-view-viewport-container {
+    isolation: isolate;
+    padding-bottom: var(--space-8);
+    scroll-behavior: smooth;
+}
+
+.main-view-viewport-content {
+    width: 100%;
+}
+
+.gradient {
+    position: absolute;
+    height: 332px;
+    margin-top: -64px;
+    width: 100%;
+    z-index: -1;
+    background-color: rgb(83, 83, 83);
+    background-image: linear-gradient(rgba(0, 0, 0, .6) 0, var(--background-base) 100%), var(--background-noise);
+}
+
+.main-view-footer-container {
+    background-color: var(--background-base);
+    padding-top: 40px;
+}

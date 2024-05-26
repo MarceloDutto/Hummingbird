@@ -28,12 +28,3 @@
     padding: var(--space-2);
 }
 
-main {
-    grid-area: main-view;
-    background-color: var(--background-base);
-    width: 100%;
-    height: auto;
-    padding: var(--space-2);
-    border-radius: var(--space-2);
-}
-

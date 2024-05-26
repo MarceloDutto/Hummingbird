@@ -4,6 +4,7 @@ import './mainContent.css';
 
 import LeftSideBar from "../LeftSideBar/LeftSideBar";
 import NowPlaying from "../NowPlaying/NowPlaying";
+import MainView from "../MainView/MainView";
 
 const MainContent = () => {
     return (
@@ -11,7 +12,7 @@ const MainContent = () => {
             <div className="Root">
                 <div className="wrapper">
                     <LeftSideBar />
-                    <main></main>
+                    <MainView />
                     <NowPlaying />
                 </div>
             </div>
