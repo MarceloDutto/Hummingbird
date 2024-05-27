@@ -4,6 +4,9 @@ import React from "react";
 //STYLES
 import './mainView.css';
 
+//COMPONENTS
+import MainViewFooter from "../MainViewFooter/MainViewFooter";
+
 
 //MAIN VIEW
 const MainView = () => {
@@ -54,7 +57,9 @@ const MainView = () => {
                             <main className="main-view-viewport-content">
                                 <div className="gradient"></div>
                                 /* AGREGAR COMPONENTE */
-                                <div className="main-view-footer-container"></div>
+                                <div className="main-view-footer-container">
+                                    <MainViewFooter />
+                                </div>
                             </main>
                         </div>
                     </div>
