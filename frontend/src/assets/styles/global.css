@@ -82,3 +82,22 @@ body {
     height: 32px;
 }
 
+.btn-general {
+    font-family: var(--font-primary);
+    font-size: var(--font-body-large, 1.6rem);
+    font-weight: var(--fw-bold, 700);
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--radius-full, 9999px);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    min-inline-size: 0px;
+    color: var(--text-subtle, #a7a7a7);
+}
+

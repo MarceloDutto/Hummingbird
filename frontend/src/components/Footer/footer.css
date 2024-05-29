@@ -19,14 +19,14 @@ footer {
     padding: 11px 24px 7px 15px;
 }
 
-.text-wrapper {
+.footer-text-wrapper {
     margin: 0 0 4px;
     color: var(--text-base);
 }
 
 .signup-button {
     font-size: var(--font-body-large);
-    font-weight: var(--fw-bold), 700;
+    font-weight: var(--fw-bold);
     background-color: var(--background-white);
     border: 0;
     border-radius: var(--radius-full);

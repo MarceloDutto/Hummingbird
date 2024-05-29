@@ -10,37 +10,23 @@
     padding: 16px 20px;
 }
 
-.info {
+.bnn1-info {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
     color: var(--text-base);
 }
 
-.action {
+.bnn1-action {
     align-self: flex-start;
 }
 
-.btn {
+.btn-banner1 {
     background-color: var(--background-highlight-light);
-    border: 0;
-    border-radius: 9999px;
-    cursor: pointer;
     display: inline-block;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    touch-action: manipulation;
-    transition-duration: 33ms;
-    transition-property: background-color, border-color, color, box-shadow, filter, transform;
-    user-select: none;
-    vertical-align: middle;
-    padding: 0;
-    min-inline-size: 0;
-    min-block-size: var(--space-8);
     align-items: center;
     justify-content: center;
+    min-block-size: var(--space-8);
     padding-block-start: var(--space-1);
     padding-block-end: var(--space-1);
     padding-inline-start: var(--space-4);
@@ -48,8 +34,8 @@
     transition: transform .2s linear;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+.btn-banner1:hover {
+    transform: scale(1.04);
 }
 
 .black {

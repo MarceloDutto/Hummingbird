@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="signup-bar">
-                <div className="text-wrapper">
+                <div className="footer-text-wrapper">
                     <p className="text text-body-large-bold">Registrate para acceder a música y podcasts ilimitados.</p>
                 </div>
                 <button className="signup-button">

@@ -41,8 +41,8 @@ const MainView = () => {
                     </div>
                     <div className="sign-actions">
                         <div className="buttons">
-                            <button className="signup-header-button">Registrate</button>
-                            <button className="signin-header-button">
+                            <button className="btn-general signup-header-button">Registrate</button>
+                            <button className="btn-general signin-header-button">
                                 <span className="button-inner-text">Iniciar sesión</span>
                             </button>
                         </div>

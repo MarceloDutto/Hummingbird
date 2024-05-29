@@ -89,31 +89,16 @@
 }
 
 .signup-header-button {
-    font-size: var(--text-body-large, 1.6rem);
-    font-weight: var(--fw-bold, 700);
-    background-color: transparent;
-    border: 0px;
-    border-radius: var(--radius-full, 9999px);
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    touch-action: manipulation;
-    transition-duration: 33ms;
-    transition-property: background-color, border-color, color, box-shadow, filter, transform;
-    user-select: none;
-    vertical-align: middle;
-    color: var(--text-subdued,#6a6a6a);
-    min-inline-size: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-block-size: var(--spce-12, 48px);
     padding-block-start: var(--space-2, 8px);
     padding-block-end: var(--space-2, 8px);
     padding-inline-start: var(--space-8, 32px);
     padding-inline-end: var(--space-8, 32px);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    transition-duration: 33ms;
+    transition-property: transform, color;
 }
 
 .signup-header-button:hover,
@@ -123,25 +108,13 @@
 }
 
 .signin-header-button {
-    font-size: var(--font-body-large, 1.6rem);
-    font-weight: var(--fw-bold, 700);
-    background-color: transparent;
-    border: 0px;
-    border-radius: var(--radius-full, 9999px);
-    cursor: pointer;
     display: inline-block;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    touch-action: manipulation;
-    transition-duration: 33ms;
-    transition-property: background-color, border-color, color, box-shadow, filter, transform;
-    user-select: none;
-    vertical-align: middle;
     padding: 0px;
     min-inline-size: 0px;
     align-self: center;
+    transition-duration: 33ms;
+    transition-property: color, transform;
+    
 }
 
 .button-inner-text {
