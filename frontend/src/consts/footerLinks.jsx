@@ -1,25 +1,27 @@
-import FacebookIcon from "../components/Social/FacebookIcon.jsx";
 import InstagramIcon from "../components/Social/InstagramIcon.jsx";
-import TwitterIcon from "../components/Social/TwitterIcon.jsx";
+import LinkedinIcon from "../components/Social/LinkedinIcon.jsx";
+import YoutubeIcon from "../components/Social/YoutubeIcon.jsx";
+import WebIcon from "../components/Social/WebIcon.jsx";
+import GitHubIcon from "../components/Social/GithubIcon.jsx";
 
 export const FOOTERLINKS = [
 
     {
         url: 'https://www.marcelodutto.com',
         text: 'Web Page',
-        icon: <FacebookIcon />,
+        icon: <WebIcon />,
         id: 'footer-link-web'
     },
     {
         url: 'https://github.com/MarceloDutto',
         text: 'Github',
-        icon: <FacebookIcon />,
+        icon: <GitHubIcon />,
         id: 'footer-link-fb'
     },
     {
         url: 'https://www.linkedin.com/in/marcelodutto/',
         text: 'Linkedin',
-        icon: <FacebookIcon />,
+        icon: <LinkedinIcon />,
         id: 'footer-link-in'
     },
     {
@@ -31,7 +33,7 @@ export const FOOTERLINKS = [
     {
         url: 'https://www.youtube.com/@marcelodutto2059',
         text: 'Youtube',
-        icon: <TwitterIcon />,
+        icon: <YoutubeIcon />,
         id: 'footer-link-yt'
     },
 ]

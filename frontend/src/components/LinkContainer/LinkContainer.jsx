@@ -8,7 +8,7 @@ const LinkContainer = ({ icon, url, text }) => {
             <span aria-hidden="true" className="icon-wrapper" >
                 {icon}
             </span>
-            <a draggable="false" href={url} className="link" target="_blank" rel="noopener" >
+            <a draggable="false" href={url} className="link" target="_blank" rel="noopener" aria-label={`Link a ${text} de Marcelo Dutto`} >
                 <span className="link-text">
                     {text}
                 </span>

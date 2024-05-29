@@ -9,6 +9,7 @@ import TwitterIcon from "../Social/TwitterIcon";
 
 //CUSTOM IMPORTS
 import { FOOTERLINKS } from "../../consts/footerLinks";
+import LinkContainer from "../LinkContainer/LinkContainer";
 
 
 //MAIN VIEW FOOTER
@@ -22,10 +23,7 @@ const MainViewFooter = () => {
                 <div className="top-socials">
                     {
                         FOOTERLINKS.map(social => (
-                            <a href={social.url} draggable="false" target="_blank" rel="noopener" className="ft-link" key={social.id}>
-                                {social.icon}
-                                {social.text}
-                            </a>
+                            <LinkContainer icon={social.icon} url={social.url} text={social.text} key={social.id}/>
                         ))
                     }
                 </div>
@@ -34,7 +32,7 @@ const MainViewFooter = () => {
             <div className="mv-footer-bottomsection">
                 <div className="copyright-notice">
                     <div className="copyright-text">
-                        <p className="text-body-medium copyright">© 2024 Marcelo Dutto</p>
+                        <p className="text-body-medium copyright">&copy; {new Date().getFullYear()} Marcelo Dutto</p>
                     </div>
                 </div>
             </div>

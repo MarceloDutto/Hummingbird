@@ -1,11 +1,13 @@
 .link-container {
-    margin-right: var(--space-5);
+    margin-right: var(--space-4);
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-inline: var(--space-2) ;
+    padding-inline: var(--space-2);
+    padding-block: var(--space-05);
     border: 0;
     border-radius: var(--radius-large);
-    transition: color .2s linear;
+    transition: color .3s linear;
 }
 
 .link-container:hover,
@@ -35,6 +37,7 @@
 
 .link-text {
     margin-block: 0px;
+    white-space: nowrap;
     font-size: var(--font-body-medium);
     font-weight: var(--fw-regular);
 }
