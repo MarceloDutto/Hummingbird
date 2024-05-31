@@ -1,0 +1,23 @@
+.navigation-buttons {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-base);
+    display: inline-flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    touch-action: manipulation;
+}
+
+.nav-button:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+}
