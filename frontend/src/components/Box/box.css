@@ -1,0 +1,144 @@
+.box-component {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: var(--space-2, 8px);
+    min-block-size: 48px;
+    padding-block: var(--space-3);
+    padding-inline: var(--space-3);
+    border-radius: calc(var(--radius-small) - 2px);
+    color: var(--text-base, #fff);
+    cursor: pointer;
+    user-select: none;
+    z-index: 0;
+    transition: 0.3s linear;
+}
+
+.button-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    border: none;
+    z-index: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.box-top {
+    pointer-events: none;
+    position: relative;
+}
+
+.img-frame {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    padding-bottom: 100%;
+    background-color: #333;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+
+.box-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    user-select: none;
+}
+
+.play-anim-button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 500px;
+    pointer-events: none;
+    box-shadow: 0 8px 8px rgba(0,0,0,.3);
+    transform: translateY(8px);
+    transition: all .2 ease-out;
+    z-index: 2;
+    opacity: 1;
+}
+
+.box-button {
+    display: inline-block;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, boz-shadow, filter, transform;
+    padding: 0;
+}
+
+.box-btn-inner {
+    position: relative;
+    background-color: var(--palette-positive, #1ed760);
+    color: var(--text-black, #000000);
+    display: flex;
+    border-radius: var(--radius-full, 9999px);
+    font-size: inherit;
+    min-block-size: var(--spce-12, 48px);
+    align-items: center;
+    justify-content: center;
+    inline-size: var(--space-12, 48px);
+    block-size: var(--space-12, 48px);
+}
+
+.box-icon-wrapper {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.box-bottom {
+    display: flex;
+    column-gap: var(--space-3, 12px);
+    align-items: center;
+}
+
+.box-interaction-area {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+
+.box-link {
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+
+.box-title {
+    margin-block: 0;
+    font-size: var(--font-body-large, 16px);
+    font-weight: var(--fw-regular);
+    outline: none;
+    text-decoration: none;
+}
+
+.box-title-text {
+    overflow: hidden;
+}
+
+.box-subtitle {
+    margin-block: 0;
+    font-size: var(--font-body-medium, 14px);
+    font-weight: var(--fw-regular);
+    color: var(--text-subtle, #7a7a7a);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    overflow: hidden;
+}
+
+.box-sublink {
+    position: relative;
+    color: #b3b3b3;
+    z-index: 1;
+    user-select: none;
+}
