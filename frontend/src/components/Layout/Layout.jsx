@@ -1,18 +1,22 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
-import './mainContent.css';
+
+//STYLES
+import './layout.css';
 
 import LeftSideBar from "../LeftSideBar/LeftSideBar";
 import NowPlaying from "../NowPlaying/NowPlaying";
-import MainView from "../MainView/MainView";
 
-const MainContent = () => {
+
+//LAYOUT
+const Layout = () => {
     return (
-        <div id="main">
+        <div id="layout">
             <div className="Root">
                 <div className="wrapper">
                     <LeftSideBar />
-                    <MainView />
+                    <Outlet />
                     <NowPlaying />
                 </div>
             </div>
@@ -20,4 +24,4 @@ const MainContent = () => {
     )
 }
 
-export default MainContent;
+export default Layout;

@@ -10,7 +10,7 @@ import MainHeader from "../MainHeader/MainHeader";
 
 
 //MAIN VIEW
-const MainView = () => {
+const MainView = ({ children }) => {
     return (
         <div id="main-view" >
             <MainHeader />
@@ -19,7 +19,7 @@ const MainView = () => {
                     <div className="viewport">
                         <div className="main-view-viewport-spacer"></div>
                         <div className="main-view-viewport-container">
-                            
+                            {children}             
                         </div>
                     </div>
                 </div>
